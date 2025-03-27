@@ -1,0 +1,47 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li><span class = 'PastaPai'>Backend</span>
+        <ul>
+            <li>
+                <span class = 'PastaPai'>app</span>
+                <ul>
+                    <li>Produto.js</li>
+                    <li>Usuario.js</li>
+                    <li>Venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span class = 'PastaPai'>Config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><span class = 'PastaPai'>Frontend</span>
+        <ul>
+            <li>
+              <span class = 'PastaPai'>Public</span>
+              <ul>
+                <li>app.css</li>
+                <li>app.js</li>
+                <li>index.html</li>
+              </ul>  
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    document.querySelectorAll(".PastaPai").forEach(e =>{
+        e.onclick = () => {
+            const ul = e.nextElementSibling
+            const display = ul.style.display
+            ul.style.display = display === 'none' ? 'block':'none'
+        }
+    })
+</script>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
