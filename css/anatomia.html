@@ -5,7 +5,34 @@
     <meta charset="UTF-8">
     <title>Anatomia CSS</title>
     <style>
-        /* ... */
+        .selector{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /* Multiplos Valores */
+            border: solid 5px navy; /* shorthand property*/
+            font-family: helvetica, monospace;
+            /*Funções*/
+            width: calc(100%- 20 px);
+            background-color: rgb(34, 153, 189);
+        }
+
+        /* Usando uma pseudo-classe */
+        .selector:hover{
+            background-color: blue;
+
+        }
+
+        /* Usando um pseudo-elemento */
+        .selector::first-letter{
+            font-size: 35px;
+        }
+
+        /* Padrão de Nomenclatura ? */
+        /* dash-case ou camelCase? -> CamelCase supremacy */
+
+        
+
     </style>
 </head>
 

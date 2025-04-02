@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
-        /* ... */
+        body{
+            background-color: aquamarine; /* A preferencia do estilo é o que vem depois, nesse caso é do href*/
+                                            /* Mas se o estilo for inline (Não é boa prática), a preferência é desse estilo*/
+        }
+
     </style>
+    <link rel="stylesheet" href="css/externo.css">
+
 </head>
 
 <body>
